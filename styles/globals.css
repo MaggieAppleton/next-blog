@@ -72,7 +72,7 @@ body {
     padding: 0;
     margin: 0;
     color: var(--white);
-    font-family: 'century', serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: var(--black);
 }
 
@@ -86,15 +86,12 @@ h3,
 h4,
 h5 {
     color: var(--offWhite);
-    line-height: 1.1;
-    font-family: 'Oswald';
-    text-transform: uppercase;
+    font-family: 'Yeseva One';
 }
 
 h1 {
     font-family: var(--font-title);
     font-size: 4rem;
-    font-weight: 700;
     letter-spacing: 1.8px;
 }
 
