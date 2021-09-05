@@ -1,36 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@font-face {
-    font-family: 'century';
-    src: url('/fonts/century-schoolbook/century-reg.woff2') format('woff2'),
-        url('/fonts/century-schoolbook/century-reg.woff') format('woff');
-    font-style: normal;
-    font-weight: 400;
-}
-@font-face {
-    font-family: 'century';
-    src: url('/fonts/century-schoolbook/century-italic.woff2') format('woff2'),
-        url('/fonts/century-schoolbook/century-italic.woff') format('woff');
-    font-style: italic;
-    font-weight: 400;
-}
-@font-face {
-    font-family: 'century';
-    src: url('/fonts/century-schoolbook/century-bold.woff2') format('woff2'),
-        url('/fonts/century-schoolbook/century-bold.woff') format('woff');
-    font-style: normal;
-    font-weight: 700;
-}
-@font-face {
-    font-family: 'century';
-    src: url('/fonts/century-schoolbook/century-boldItalic.woff2') format('woff2'),
-        url('/fonts/century-schoolbook/century-boldItalic.woff') format('woff');
-    font-style: italic;
-    font-weight: 700;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Yeseva+One&display=swap');
 
 :root {
     /* Colors */
-    --black: hsl(256deg 72% 12%);
+    --black: #1a1b20;
+    --white: #e8e1d8;
+    --offWhite: #dcd6cd;
+    --purple: #707bd9;
+    --blue: #85d0d7;
+    --caramelCorn: #ffce7b;
+    --darkGrey: #444549;
+    --mediumGrey: #909ca2;
+    --lightGrey: #d7e0e4;
+
+    /* Fonts */
+    --font-code: 'Ubuntu Mono', monospace;
+    --font-body: 'Open Sans', sans-serif;
+    --font-title: 'Yeseva One', cursive;
 
     /* Code block styles */
     --prism-theme-white: #fff;
@@ -86,10 +71,9 @@ html,
 body {
     padding: 0;
     margin: 0;
-    color: var(--black);
+    color: var(--white);
     font-family: 'century', serif;
-    background-color: hsl(350, 49%, 81%);
-    background-image: url('/images/cream-dust.png');
+    background-color: var(--black);
 }
 
 strong {
@@ -101,14 +85,14 @@ h2,
 h3,
 h4,
 h5 {
-    color: var(--black);
+    color: var(--offWhite);
     line-height: 1.1;
     font-family: 'Oswald';
     text-transform: uppercase;
 }
 
 h1 {
-    color: var(--black);
+    font-family: var(--font-title);
     font-size: 4rem;
     font-weight: 700;
     letter-spacing: 1.8px;
@@ -121,11 +105,13 @@ h1 {
 }
 
 h2 {
+    font-family: var(--font-title);
     font-size: 2.8rem;
     font-weight: 600;
 }
 
 h3 {
+    font-family: var(--font-body);
     font-size: 2rem;
     font-weight: 700;
 }
